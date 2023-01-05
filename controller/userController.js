@@ -36,6 +36,7 @@ export const create = async (req, res) => {
       status: "success",
       message: "Insert User Successfully",
       data: result,
+      data: data
     });
   } catch (error) {
     return res.json({ status: "error", message: error.message });
